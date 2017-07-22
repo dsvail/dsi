@@ -1,0 +1,337 @@
+/* css style sheet for Digital Systems web site */
+
+/* 
+/* BASIC SETUP */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+#time{
+    font-family:helvetica neue;
+    font-size: 16px;
+    border: 1px solid #fff;
+    display: inline-block;
+    padding:6px;
+    
+   
+}
+
+html,
+body{
+    
+    background-color: #fff;
+    color: #d4d2d2;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-weight: 100;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+    
+}
+
+/* COMMON ELEMENTS */
+.rowheader{
+    widows: 100%;
+  
+    margin: 0 auto;
+}
+
+.rowheader img{
+    background-attachment: fixed;
+}
+
+.row{
+    width: 100%;
+    max-width: 1140px;
+    margin: 0 auto 0 auto;
+}
+
+
+.btn:link,
+.btn:visited {
+    
+    display: inline-block;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    color:#fff;
+    width: 150px;    
+}
+
+.btn:hover,
+.btn:active {
+    background-color: #202d3a;
+    transition: background-color 0.4s, border 0.4s, color 0.6s;    
+}
+
+.btn-full{
+    background-color: #2c3e50;
+    margin-right: 12px;
+    padding-left: 4px;
+}
+
+.btn-ghost {
+    border: 1px solid #fff;
+}
+
+#btn btn-full {
+    
+}
+/* HEADER ELEMENTS */
+
+header{
+   background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/eastwall.jpg);
+    //background: url(img/eastwall.jpg);
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-postion: center bottom;
+    background-attachment: fixed;
+    height:100vh;
+    margin-bottom: 60px;
+    
+}
+
+/* Main Navigation*/
+.main-nav{
+    float: right;
+    list-style: none;
+    margin-top: 55px;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    //text-transform: uppercase;
+    font-weight:100;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #2c3e50;
+}
+
+/* Sticky Navigation*/
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left:0;
+    width:100%;
+    background-color:rgba(255, 255, 255, 0.82);
+}
+
+.sticky main-nav li a:link,
+.sticky main-nav li a:visited {
+    padding: 8px 0;
+    color: #555;
+    
+}
+.sticky logo{display: none}
+    
+}
+.sticky logo-grey{
+    display:block;
+    height: 65px;
+    width: auto;
+    float: left;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+    float: left;
+    margin-top: 40px;
+    margin-right: 10px;
+        
+}
+
+.logo-grey {
+    display: none;
+}
+
+.device {
+    height: 400px;
+    float:right;
+    padding-top: 40;
+    margin-top: 4   0;
+    margin-right: 40px
+    
+}
+
+.tagline-text-box{
+    
+    position:absolute;
+    width:1140px;
+    top:50%;
+    left:50%;
+      transform:translate(-50%, -50%);
+  
+    
+}
+
+h1{
+    margin-top:0;
+    margin-bottom: 30px;
+    color:#fff;
+    font-size: 200%;
+    font-weight: 300;
+    letter-spacing: 1px;
+    word-spacing: 3px;
+    
+}
+
+h2 {
+    font-size: 180%;
+}
+
+/* PORTFOLIO Elements / section Show N Tell*/
+.show-n-tell {
+    width: 300px;
+    margin: 0px 50px;
+}
+
+
+.photo-grid {
+    margin: 10px auto;
+    width:  100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: visible;
+    align-items: center;
+}
+
+.photo-grid-item {
+   
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    justify-content:flex-start;
+    flex-wrap: wrap;
+    width: 450px;
+    height: 400px;
+    border: 1px solid #fff;
+}
+
+.photo-grid-item img{
+    align-self: flex-start;
+    width: 400px;
+    height: 300px;
+/*    position: absolute;*/
+    position: relative;
+}
+
+
+/*
+.client {
+    width: 120px;
+    height: 200px;
+    padding: 40px 20px;
+    height: 200px;
+*/
+}
+
+.client-quote {
+    width: 300px
+    
+}
+
+
+/* SECTION -- How We Work*/
+
+
+#how-we-work {
+    margin: 50px auto;
+    width:  100%;
+    height:100vh;
+    background-color: #707070;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.workflow-image {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+/*    height: 800px;*/
+    
+}
+
+.section-header {
+    width: 300px;
+    margin 60px 50px;
+    padding: 40px; 
+}
+
+/* FOOTER ELEMENTS */
+
+footer{
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;
+   
+}
+
+.footer-nav{
+    list-style: none;
+    float: left;
+    color:#fff;
+    
+}
+.resource-links{
+    
+    list-style:none;
+    float:right;
+}
+
+.footer-nav li,
+.resource-links li{
+    display:inline-block;
+    margin-right: 20px;
+    margin-top: 20px;
+    height: 60px;
+}
+.footer-nav li a:link,
+.footer-nav li a:visited {
+    float:left;
+text-decoration: none;
+border: 0;
+color:#888;
+    transition: color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color:#fff;
+}
+
+.resource-links li a img{
+    height: 25px;
+}
+.footer-copy {
+    font-size: 80%;
+    padding-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    color:#888;
+}

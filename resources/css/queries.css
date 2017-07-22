@@ -1,0 +1,76 @@
+/*Breakpoints on various sized devices*/
+
+
+
+/*Big Tablets to 1200px (widths smaller than the 1140px row) */
+@media only screen and (max-width: 1200px){
+    
+    .tagline-text-box{
+        width:100%;
+        padding: 0 4%;
+}
+    .row {padding: 0 4%}
+}
+
+.rowheader {padding: 0 4%}
+
+
+
+/*for tablets: from 768 to 1023px */
+@media only screen and (max-width: 1023px){
+    
+
+}
+
+
+
+
+/*for phones to small tablets : from 481 to 767px*/
+@media only screen and (max-width: 767px){
+    
+    .row img{
+        padding-top: 0;
+        margin-top:20px;
+        
+    }
+    .tagline-text-box{
+    
+    
+    width:100%;
+    top:0;
+    left:0;
+      transform:translate(-0, -0%);
+        margin-top: 220px;
+        font-size: 17px;
+        text-align: center;
+}
+    .main-nav{display: none;}
+    .col {width:100%;}
+    .footer-nav{font-size: 80%;}
+    .resource-links{float:none;}
+}
+
+/*for small screen sizes ...eg. 1st gen. phones from 0 to 480px*/
+@media only screen and (max-width: 480px){
+    
+    .tagline-text-box{
+    
+   
+    width:100%;
+    top:0;
+    left:0;
+      transform:translate(-0, -0%);
+        margin-top: 220px;
+        font-size: 16px;
+        text-align: center;
+}
+    .tagline-text-box a {
+        
+        margin-top: 25px;
+    }
+    .footer-nav li{
+        display:list-item;
+        height: 30px;}
+}
+
+
