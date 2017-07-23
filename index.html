@@ -23,7 +23,7 @@
                  
                     <ul class="main-nav js--main-nav">
                         <li><a href="#show-n-tell">example of work</a></li>
-                        <li><a href="#">how we work</a></li>
+                        <li><a href="#how-we-work">how we work</a></li>
                         <li><a href="#">contact us</a></li>
                     </ul>
                     <a class="mobile-nav-icon js--nav-icon"><i class="ion-navicon-round"></i></a>
@@ -32,16 +32,19 @@
             <div class="tagline-text-box">
                 
                 <h1>work with your data, no matter where you are</h1>
-                <a class="btn btn-full" href= "#show-n-tell">show me</a>
-                <a class ="btn btn-ghost" href= "#">contact us</a>
+                <div id="buttons">
+                    <a class="btn btn-full" href= "#show-n-tell">show me</a>
+                    <a class="btn btn-ghost" href= "#contact">contact us</a>
+                </div>
+
             </div>
         
         </header>
         
 <!--       new section for showing portfolio-->
    
-<section id='show-n-tell'>
-    <h2 class="show-n-tell">portfolio</h2>
+<section id="show-n-tell">
+    <h2 class="title">portfolio</h2>
   <div class='photo-grid'>
     <div class='photo-grid-item'>
       <img src='resources/img/Canine01.png'>
@@ -57,11 +60,11 @@
       <img src="resources/img/ketomico.jpg">
         <p class="client">Ketomico <br>-- <br>high end custom jewelry</p>
     </div>
-      <div class='photo-grid-item'>
-  <img src='resources/img/VMSAlpine03.png'/>
+    <div class='photo-grid-item'>
+        <img src='resources/img/VMSAlpine03.png'/>
           <p class="client">VMS Alpine <br>-- <br>high school alpine ski racing</p>
-</div>
-<div class='photo-grid-item last-item'>
+    </div>
+    <div class='photo-grid-item'>
   <img src='/resources/img/canine.jpg'/>
     <p class="client">Challenge Aspen <br>-- <br>non-profit providing outdoor opportunities to wounded youth and vets</p>
 </div>
@@ -71,7 +74,8 @@
 <!--   end section for portfolio -->
         
 <!--        SECTION - How We Work-->
-      <section id='how-we-work'> 
+    
+<section id="how-we-work"> 
           <h2 class="section-header">how we work</h2>
           <div c lass="workflow-image">
 <!--          <img src='resources/img/DevicesCirlce_WHITE.svg'>-->
@@ -108,36 +112,7 @@
         
         
 <!--end of How We Work Section-->
-        <footer>
-        <div class="row">
-       <div class="col span-1-of-2">
-                <ul class="footer-nav">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Process</a></li>
-                    <li><a href="#">Examples of Work</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-             </div>
-            <div class="col span-1-of-2">
-                <ul class="resource-links">
-                    <li><a href="#"> <img src="resources/img/applelogo.png"></a></li>
-                    <li><a href="#"> <img src="resources/img/certified_13_logo_rev.png"></a></li>
-                </ul>
-            </div>
-                
-           </div>
-            
-            <div class="row">
-            <p id="time">7/6/2017 11:20:01 AM</p>
-            </div>
-            
-            <div class="row">
-            <p class="footer-copy">Copyright &copy; 2017 by Digital Systems, inc.  All rights reserved.  (970) 949-6402.</p>
-            </div>
-        
-        
-        
-        </footer>
+
         
         
         <script src="vendors/js/jquery-3.2.1.slim.js"></script>
@@ -146,7 +121,44 @@
         
         
     </body>
+    
+    <footer>
+<!--
+       <div class="col span-1-of-2">
+                <ul class="footer-nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Process</a></li>
+                    <li><a href="#">Examples of Work</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+             </div>
+-->
+        
+        <div id="contact">
+            <h2>Contact us</h2>
+            <p id="address">Digital Systems Inc<br>501 Pine Street<br>PO Box 124<br>Minturn, CO 81645<br></p>
+            <p id="contactinfo">call: (970) 949-6402<br>e-mail: alex@dsvail.com</p>
+        </div>
+        
+            <div id="cert">
+                <ul class="resource-links">
+                    <li><a href="#"> <img src="resources/img/applelogo.png"></a></li>
+                    <li><a href="#"> <img src="resources/img/certified_13_logo_rev.png"></a></li>
+                </ul>
+            </div>
 
+            
+<!--
+        <div class="row">
+            <p id="time">7/6/2017 11:20:01 AM</p>
+        </div>
+-->
+            
+        <div class="row">
+            <p id="footer-copy">Copyright &copy; 2017 by Digital Systems, inc.  All rights reserved.  (970) 949-6402.</p>
+        </div>
+        
+    </footer>
 
 
 </html>
