@@ -1,0 +1,122 @@
+/*Breakpoints on various sized devices*/
+
+
+
+/*Big Tablets to 1200px (widths smaller than the 1140px row) */
+/*
+@media only screen and (max-width: 1200px) {
+    
+    .tagline-text-box {
+        width:100%;
+        padding: 0 4%;
+    }
+    
+    .row {
+        padding: 0 4%;
+    }
+
+
+    .rowheader {
+        padding: 0 4%;
+    }
+}
+*/
+
+
+/*for tablets: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
+    
+
+}
+
+
+
+
+/*for phones to small tablets : from 481 to 767px*/
+@media only screen and (max-width: 767px) {
+    
+    .tagline-text-box {
+        margin-left: 0px;
+        width:100%;
+        margin-top: 8rem;
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+    }
+    
+    .main-nav {
+        display: none;
+    }
+    
+    .col {
+        width:100%;
+    }
+
+    .row {
+        justify-content: flex-start;
+    }
+}
+
+/*for small screen sizes ...eg. 1st gen. phones from 0 to 480px*/
+@media only screen and (max-width: 540px){
+    
+    .tagline-text-box {
+        width: 100%;
+        top: 0;
+        left: 0;
+        margin-top: 3rem;
+        margin-bottom: .5rem;
+        padding: 0rem 2rem;
+        font-size: 0.7rem;
+        text-align: center;
+    }
+    
+    #buttons {
+        margin: .5rem 0rem .1rem 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    #buttons a {
+        width: 45%;
+        margin: 0.8rem;
+    }
+    
+    .photo-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .photo-grid-item {
+        margin: 1rem 0rem;
+        text-align: center;
+    }
+    
+    #address, #contactinfo {
+        font-size: .6rem;
+    }
+    
+    #contact h2 {
+        margin: .5rem 0rem;
+    }
+    
+    #footer-copy {
+        font-size: .6rem;
+    }
+    
+    #process {
+        font-size: .9rem;
+    }
+}
+
+
+@media only screen and (max-width: 1040px) {
+    
+    .photo-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}

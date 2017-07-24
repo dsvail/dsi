@@ -46,13 +46,6 @@ body{
     background-attachment: fixed;
 }
 
-.row{
-    width: 100%;
-    max-width: 1140px;
-    margin: 0 auto 0 auto;
-}
-
-
 .btn:link,
 .btn:visited {
     
@@ -97,12 +90,11 @@ header{
 .main-nav{
     float: right;
     list-style: none;
-    margin-top: 55px;
 }
 
 .main-nav li {
     display: inline-block;
-    margin-left: 40px;
+    margin-left: 2rem;
 }
 
 .main-nav li a:link,
@@ -134,7 +126,7 @@ header{
 
 .sticky main-nav li a:link,
 .sticky main-nav li a:visited {
-    padding: 8px 0;
+    padding:  0;
     color: #555;
     
 }
@@ -150,12 +142,20 @@ header{
     margin-right: 10px;
 }
 
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0rem;
+    
+}
+
 .logo {
     height: 65px;
     width: auto;
     float: left;
-    margin-top: 40px;
-    margin-right: 10px;
+    margin: 1.5rem 1rem;
         
 }
 
@@ -172,19 +172,24 @@ header{
     
 }
 
-.tagline-text-box{
-    margin: 8rem 2rem;
+.tagline-text-box {
+    margin: 8rem 2rem 2rem 2rem;
 }
 
 #buttons {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
+    margin: 2rem 1rem;
+}
+
+#buttons a {
+    margin: 1rem;
 }
 
 h1{
     margin-top:0;
-    margin-bottom: 30px;
+    margin-bottom: .5rem;
     color:#fff;
     font-size: 200%;
     font-weight: 300;
@@ -199,15 +204,15 @@ h2 {
 
 .title {
     font-size: 2rem;
-    width: 300px;
-    margin: 0px 50px;
+    padding: 1.8rem;
 }
+
+
+
 
 /* PORTFOLIO Elements / section Show N Tell*/
 
 .photo-grid {
-    margin: 10px auto;
-    width:  100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -215,9 +220,8 @@ h2 {
 }
 
 .photo-grid-item {
-    margin-right: 1rem;
-    width: 500px;
-    height: 400px;
+    margin: 2rem;
+    text-align: center;
 }
 
 .photo-grid-item img{
@@ -226,24 +230,18 @@ h2 {
 }
 
 
-/*
 .client {
-    width: 120px;
-    height: 200px;
-    padding: 40px 20px;
-    height: 200px;
-
+    text-align: center;
 }
-*/
+
+
 
 
 /* SECTION -- How We Work*/
 
 
 #how-we-work {
-    margin: 50px auto;
     width: 100%;
-    height: 100vh;
     background-color: #707070;
 }
 
@@ -251,10 +249,19 @@ h2 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    
+    padding: 0.1rem;
 /*    height: 800px;*/
     
 }
+
+#process {
+    padding: 0rem .5rem 2rem 2rem;
+    
+}
+
+
+
 
 /* FOOTER ELEMENTS */
 
@@ -265,9 +272,22 @@ footer{
    
 }
 
+#contact h2 {
+    margin-bottom: 1.5rem;
+}
+
+#address, #contactinfo {
+    display: inline-flex;
+}
+
+#contactinfo {
+    margin-left: 1.5rem;
+}
+
 .resource-links{
     list-style:none;
     float:right;
+    margin-top: 1rem;
 }
 
 .footer-nav li,
@@ -281,6 +301,7 @@ footer{
 .resource-links li a img{
     height: 50%;
 }
+
 #footer-copy {
     font-size: 0.75rem;
     margin-top: 0.5rem;
