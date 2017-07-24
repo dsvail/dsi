@@ -88,13 +88,13 @@ header{
 
 /* Main Navigation*/
 .main-nav{
-    float: right;
     list-style: none;
 }
 
 .main-nav li {
     display: inline-block;
-    margin-left: 2rem;
+    margin: 1rem;
+    width: 5rem;
 }
 
 .main-nav li a:link,
@@ -113,6 +113,15 @@ header{
 .main-nav li a:active {
     border-bottom: 2px solid #2c3e50;
 }
+
+
+nav {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 
 /* Sticky Navigation*/
 
@@ -144,7 +153,6 @@ header{
 
 .row {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0rem;
@@ -154,14 +162,14 @@ header{
 .logo {
     height: 65px;
     width: auto;
-    float: left;
-    margin: 1.5rem 1rem;
-        
+    margin: 3rem 5rem;
+    justify-content: flex-start;
 }
 
 .logo-grey {
     display: none;
 }
+
 
 .device {
     height: 400px;
@@ -173,14 +181,14 @@ header{
 }
 
 .tagline-text-box {
-    margin: 8rem 2rem 2rem 2rem;
+    margin: 8rem 2rem 2rem 4rem;
 }
 
 #buttons {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    margin: 2rem 1rem;
+    margin: 2rem 3rem;
 }
 
 #buttons a {
@@ -222,6 +230,7 @@ h2 {
 .photo-grid-item {
     margin: 2rem;
     text-align: center;
+    width: 25rem;
 }
 
 .photo-grid-item img{
@@ -231,7 +240,9 @@ h2 {
 
 
 .client {
-    text-align: center;
+    text-align: left;
+    font-size: .9rem;
+    margin-left: .3rem;
 }
 
 
@@ -311,4 +322,11 @@ footer{
 
 #cert {
     display: flex;
+}
+
+.row1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0rem;
 }
